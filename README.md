@@ -1,14 +1,15 @@
 # Numerical_Analysis_Optimization_Package
 Python package that contains some numerical analysis & optimization algorithms.
 
-Modules:
-   There are 3 modules in this package: 
+1. Modules:
+   There are 3 modules in this package:
 
-    - [one_dim_min.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/one_dim_min.py) 
+    - [one_dim_min.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/ main/NumAn_Op/one_dim_min.py) 
       
-      - [sys_eq.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/sys_eq.py)
+    - [sys_eq.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/sys_eq.py)
       
-      - [multi_dim_min.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/multi_dim_min.py)
+    - [multi_dim_min.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/multi_dim_min.py)
+
       
    To use them you can import them as following:
    
