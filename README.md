@@ -125,3 +125,19 @@ print("The optimal solution obtained by the 'Exhaustive_search' method is:", min
 The optimal solution obtained by the 'Exhaustive_search' method is: 0.44999999999999996
 ```
 ![logo](fig/fig3.gif)
+
+- ***Quasi Newton** 
+```python
+# Define the function 'f'
+f = lambda x: 0.65 - 0.75 / (1 + x * x) - 0.65 * x * math.atan2(1, x)
+
+# Find the optimal solution
+min_ , list_sol= Quasi_Newton( 0.1 , f )
+
+print("The optimal solution obtained by the 'Quasi_Newton' method is:", min_)
+```
+- ***Results***
+```bach 
+The optimal solution obtained by the 'Quasi_Newton' method is: 0.48092806464929994
+```
+![logo](fig/fig4.gif)
