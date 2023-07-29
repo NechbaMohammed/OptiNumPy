@@ -146,7 +146,7 @@ The optimal solution obtained by the 'Quasi_Newton' method is: 0.480928064649299
 ```python
 from OptiNumPy.equation_solving import *
 ```
-- ***The Elimination Of Gauss-Jordan** 
+- ***The Elimination Of Gauss-Jordan***
 ```python
 A = [[2, 4, -2], [4, 9, -3], [-2, -3, 7]]
 b = np.array([2, 8, 10])
