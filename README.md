@@ -56,10 +56,9 @@ To install the package, you can use the following command :
 
 ### I. Univariate Optimization Algorithms:
 
-- **Searching with Elimination Methods**:
 ```python
 import numpy as np
-import math as m
+import math
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from OptiNumPy.univariate_optimization import *
@@ -82,3 +81,22 @@ print("The optimal solution obtained by the 'fixed_step_size' method is:", min_f
 The optimal solution obtained by the 'fixed_step_size' method is: 0.49999999999999994
 ```
 ![logo](fig/fig1.gif)
+
+ - ***Search with accelerated step size*** 
+```python
+# Define the initial point and step size
+initial_point = 0
+step_size = 0.05
+f = lambda x: 0.65 - 0.75 / (1 + x * x) - 0.65 * x * math.atan2(1, x)
+
+# Find the optimal solution using the fixed_step_size method
+min_, list_sol = accelerated_step_size(initial_point, step_size, f)
+
+# Print the optimal solution obtained by the 'fixed_step_size' method
+print("The optimal solution obtained by the 'accelerated_step_size' method is:", min_)
+```
+- ***Results***
+```bach 
+The optimal solution obtained by the 'accelerated_step_size' method is: 0.5
+```
+![logo](fig/fig2.gif)
