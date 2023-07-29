@@ -126,7 +126,7 @@ The optimal solution obtained by the 'Exhaustive_search' method is: 0.4499999999
 ```
 ![logo](fig/fig3.gif)
 
-- ***Quasi Newton** 
+- ***Quasi Newton***
 ```python
 # Define the function 'f'
 f = lambda x: 0.65 - 0.75 / (1 + x * x) - 0.65 * x * math.atan2(1, x)
@@ -161,7 +161,7 @@ print("x =", x)
 The solution of the system of equations using Gauss-Jordan elimination: x = [-1.  2.  2.]
 ```
 
- ***LU Decomposition Method*** 
+- ***LU Decomposition Method*** 
 ```python
 A = [[2, 4, -2], [4, 9, -3], [-2, -3, 7]]
 P,L,U = Decomposition_LU_PA(A)
@@ -176,3 +176,4 @@ P = [0 0 1] , L = [-0.5   1.            0.] and U =  [0.          1.5         5.
     [1 0 0]       [ 0.5  -0.33333333    1.]          [0.          0.          1.33333333]
 
 ```
+
