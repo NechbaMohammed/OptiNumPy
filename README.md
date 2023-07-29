@@ -141,3 +141,37 @@ print("The optimal solution obtained by the 'Quasi_Newton' method is:", min_)
 The optimal solution obtained by the 'Quasi_Newton' method is: 0.48092806464929994
 ```
 ![logo](fig/fig4.gif)
+
+### II. Equation Solving & Decompositions:
+```python
+from OptiNumPy.equation_solving import *
+```
+- ***The Elimination Of Gauss-Jordan** 
+```python
+A = [[2, 4, -2], [4, 9, -3], [-2, -3, 7]]
+b = np.array([2, 8, 10])
+
+x = Gauss_Jordan_to_Solvea_system(A, b)
+
+print("The solution of the system of equations using Gauss-Jordan elimination:")
+print("x =", x)
+```
+- ***Results***
+```bach 
+The solution of the system of equations using Gauss-Jordan elimination: x = [-1.  2.  2.]
+```
+
+ ***LU Decomposition Method*** 
+```python
+A = [[2, 4, -2], [4, 9, -3], [-2, -3, 7]]
+P,L,U = Decomposition_LU_PA(A)
+print("P="P)
+print("L=",L)
+print("U=",U)
+```
+- ***Results***
+```bach 
+    `[0 1 0]`
+P = `[0 0 1]`
+    `[1 0 0]`
+```
