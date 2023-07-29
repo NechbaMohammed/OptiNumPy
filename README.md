@@ -6,9 +6,9 @@
 
 Welcome to the OptiNumPy - Numerical Analysis Optimization Package! This library is designed to provide various numerical optimization algorithms for solving optimization problems. The package is divided into three modules:
 
-- [univariate_optimization.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/univariate_optimization.py) 
-- [equation_solving.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/equation_solving.py)
-- [multivariate_optimization.py](https://github.com/NechbaMohammed/Numerical_Analysis_Optimization_Package/blob/main/NumAn_Op/multivariate_optimization.py)
+- [univariate_optimization.py](https://github.com/NechbaMohammed/OptiNumPy/blob/main/OptiNumPy/univariate_optimization.py) 
+- [equation_solving.py](https://github.com/NechbaMohammed/OptiNumPy/blob/main/OptiNumPy/equation_solving.py)
+- [multivariate_optimization.py](https://github.com/NechbaMohammed/OptiNumPy/blob/main/OptiNumPy/multivariate_optimization.py)
 
 
 ## Features
@@ -81,4 +81,4 @@ print("The optimal solution obtained by the 'fixed_step_size' method is:", min_f
 ```bach 
 The optimal solution obtained by the 'fixed_step_size' method is: 0.49999999999999994
 ```
-![logo](fig/fig.gif)
+![logo](fig/fig1.gif)
