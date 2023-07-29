@@ -70,10 +70,9 @@ initial_point = 0
 step_size = 0.05
 f = lambda x: 0.65 - 0.75 / (1 + x * x) - 0.65 * x * math.atan2(1, x)
 
-# Find the optimal solution using the fixed_step_size method
+# Find the optimal solution 
 min_fixed_step_size, list_sol = fixed_step_size(initial_point, step_size, f)
 
-# Print the optimal solution obtained by the 'fixed_step_size' method
 print("The optimal solution obtained by the 'fixed_step_size' method is:", min_fixed_step_size)
 ```
    - ***Results***
@@ -89,10 +88,9 @@ initial_point = 0
 step_size = 0.05
 f = lambda x: 0.65 - 0.75 / (1 + x * x) - 0.65 * x * math.atan2(1, x)
 
-# Find the optimal solution using the fixed_step_size method
+# Find the optimal solution
 min_, list_sol = accelerated_step_size(initial_point, step_size, f)
 
-# Print the optimal solution obtained by the 'fixed_step_size' method
 print("The optimal solution obtained by the 'accelerated_step_size' method is:", min_)
 ```
 - ***Results***
@@ -100,3 +98,30 @@ print("The optimal solution obtained by the 'accelerated_step_size' method is:",
 The optimal solution obtained by the 'accelerated_step_size' method is: 0.5
 ```
 ![logo](fig/fig2.gif)
+
+- ***Exhaustive search*** 
+```python
+# Define the function 'f'
+f = lambda x: 0.65 - 0.75 / (1 + x * x) - 0.65 * x * math.atan2(1, x)
+
+# Define the lower and upper bounds for the search
+lower_bound = 0
+upper_bound = 3
+
+# Define the number of points to evaluate the function within the bounds
+num_points = 20
+
+# Define the step size for the search
+step_size = 0.05
+
+# Find the optimal solution using the Exhaustive_search method
+min_, list_sol = Exhaustive_search(lower_bound, upper_bound, num_points, f)
+
+print("The optimal solution obtained by the 'Exhaustive_search' method is:", min_)
+```
+
+- ***Results***
+```bach 
+The optimal solution obtained by the 'Exhaustive_search' method is: 0.44999999999999996
+```
+![logo](fig/fig3.gif)
