@@ -64,7 +64,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from OptiNumPy.univariate_optimization import *
 ```
-  - ***Search with fixed step size*** 
+   - ***Search with fixed step size*** 
 ```python
 # Define the initial point and step size
 initial_point = 0
@@ -77,7 +77,7 @@ min_fixed_step_size, list_sol = fixed_step_size(initial_point, step_size, f)
 # Print the optimal solution obtained by the 'fixed_step_size' method
 print("The optimal solution obtained by the 'fixed_step_size' method is:", min_fixed_step_size)
 ```
-  - ***Results** 
+   - ***Results***
 ```bach 
 The optimal solution obtained by the 'fixed_step_size' method is: 0.49999999999999994
 ```
